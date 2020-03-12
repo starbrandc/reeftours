@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- navbar area end -->
+
+    <!-- breadcrumb area start -->
+    <div class="breadcrumb-area style-two jarallax" style="background-image:url({% static 'assets/img/bg/1.png' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner">
+                        <h1 class="page-title">Jozani Forest</h1>
+                        <ul class="page-list">
+                            <li><a href="{% url 'homepage' %}">Home</a></li>
+                            <li>Excursion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb area End -->
+
+    <!-- destinations-details-page start -->
+    <div class="destinations-details-page mg-top-100">
+        <div class="container">
+            <div class="row destinations-details-location-name">
+                <div class="col-lg-12">
+                    <h3>Jozani Forest</h3>
+                </div>
+                <div class="col-lg-6">
+                    <p>Venture into the jungle of Jozani Forest to spot the area's red colobus monkeys as they swing and howl in the trees. Wander down a trail through this protected area and spot some of 50 species of butterflies, 40 types of birds, as well as a few endangered animals. <br><br>
+Walk down a nature trail and observe the vast canopy above, as well as the sun-canopies created by smaller trees and shrubs. Listen to the songs of some of the island's native birds and keep a lookout for monkeys. <br><br>
+The Zanzibar red colobus monkey, a Jozani Forest resident, has been isolated from its mainland counterparts, producing distinct calls, eating habits, and coat patterns.
+With hair resembling Einstein's, these fuzzy creatures are easy to hear as they make their way through the trees. Your guide helps you find the perfect spot for monkey viewing, and you may even get to see other endangered species like the Aders' duiker or the Zanzibar servaline genet. After exploring the wild side, your host takes you back to your hotel.
+
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                <div class="destinations-details-main-slider-wrap">
+                        <div class="destinations-details-main-slider">
+                            <div class="d-details-main-slider-item">
+                                <img src="{% static 'assets/img/others/3.png' %}" alt="img">
+                            </div>
+                            <div class="d-details-main-slider-item">
+                                <img src="{% static 'assets/img/others/2.png' %}" alt="img">
+                            </div>
+                            <div class="d-details-main-slider-item">
+                                <img src="{% static 'assets/img/others/4.png' %}" alt="img">
+                            </div>
+                        </div>
+                        <div class="destinations-details-main-slider-controls">
+                            <div class="slider-nav tp-control-nav"></div>
+                            <!--slider-nav-->
+                            <div class="slider-extra tp-slider-extra">
+                                <div class="text">
+                                    <span class="first">01 </span>
+                                    <span class="last">05</span>
+                                </div>
+                                <!--text-->
+                                <div class="d-list-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                    <span class="slider__label sr-only"></span>
+                                </div>
+                            </div>
+                            <!--slider-extra-->
+                        </div>
+                    </div></div>
+            </div>
+           </div>
+    </div>
+
+{% endblock content %}

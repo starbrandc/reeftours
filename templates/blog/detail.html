@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="breadcrumb-area style-two jarallax" style="background-image:url({% static 'assets/img/bg/1.png' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner">
+                        <h1 class="page-title">{{ detail.title }}</h1>
+                        <ul class="page-list">
+                            <li><a href="{% url 'homepage' %}">Home</a></li>
+                            <li>Blog</li>
+                            <li>{{ detail.title }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- blog area start -->
+    <div class="blog-details-area pd-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="single-blog mb-0">
+                        <div class="thumb">
+                            <img src="{{ detail.cover.url }}" alt="blog">
+                        </div>
+                        <div class="single-blog-details">
+                            {% comment %} <p class="date mb-0">19 September 2019</p> {% endcomment %}
+                            <h3 class="title">{{ detail.title }}</h3>
+                            </div>
+                    </div>
+                    {{ detail.content| safe}}
+                
+                    <div class="row tag-share-area">
+                        <div class="col-lg-6">
+                            <span class="mr-2">Share:</span>
+                            <ul class="social-icon style-two">
+                                <li>
+                                    <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="#"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-lg-4">
+                    <aside class="sidebar-area sidebar-area-4">
+                        <div class="widget widget_search bg-none pd-none">
+                            <form class="search-form">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Search">
+                                </div>
+                                <button class="submit-btn" type="submit"><i class="ti-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="widget widget_categories">
+                            <h2 class="widget-title">Category</h2>
+                            <ul>
+                                <li><a href="#">Software</a> 33</li>
+                                <li><a href="#">App Landing</a> 81</li>
+                                <li><a href="#">Saas Landing</a> 12</li>
+                                <li><a href="#">Design Studio</a> 17</li>
+                                <li><a href="#">Business Studio</a> 21</li>
+                                <li><a href="#">Product Showcase</a> 62</li>
+                            </ul>
+                        </div>
+                        <div class="widget widget_tag_cloud">
+                            <h2 class="widget-title">Tags</h2>
+                            <div class="tagcloud">
+                                <a href="#">Adbeger</a>
+                                <a href="#">Religion</a>
+                                <a href="#">Relax</a>
+                                <a href="#">Nature</a>
+                                <a href="#">Descover</a>
+                            </div>
+                        </div>
+                        <div class="widget_ads">
+                            <a href="#"><img class="w-100" src="assets/img/others/01.png" alt="img"></a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog area End -->
+{% endblock content %}
