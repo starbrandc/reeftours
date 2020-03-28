@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <!-- responsive css -->
     <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/overide.css' %}">
 
 </head>
 <body>
@@ -50,7 +51,7 @@
         <div class="container nav-container">
             <div class="responsive-mobile-menu">
                 <div class="mobile-logo">
-                    <a href="index-2.html">
+                    <a href="{% url 'homepage' %}">
                         <img src="{% static 'assets/img/sticky-logo.png' %}" alt="logo">
                     </a>
                 </div>
@@ -65,32 +66,31 @@
                 <div class="nav-right-content">
                     <ul class="pl-0">
                         <li class="top-bar-btn-booking">
-                            <a class="btn btn-yellow" href="tour-details.html">Book Now <i class="fa fa-calendar-alt"></i></a>
+                            <a class="btn btn-yellow" href="#">Book Now <i class="fa fa-calendar-alt"></i></a>
                         </li>
                         <li class="tp-lang">
-                            <div class="tp-lang-wrap">
+                            <!-- <div class="tp-lang-wrap">
                                 <select class="select single-select">
                                   <option value="1">ENG</option>
                                   <option value="2">BAN</option>
                                   <option value="3">Chinese</option>
                                   <option value="3">Spanish</option>
                                 </select>
-                            </div>
+                            </div> -->
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id="tp_main_menu">
                 <div class="logo-wrapper desktop-logo">
-                    <a href="index-2.html" class="main-logo">
+                    <a href="{% url 'homepage' %}" class="main-logo">
                         <img src="{% static 'assets/img/logo.png' %}" alt="logo">
                     </a>
-                    <a href="index-2.html" class="sticky-logo">
+                    <a href="{% url 'homepage' %}" class="sticky-logo">
                         <img src="{% static 'assets/img/sticky-logo.png' %}" alt="logo">
                     </a>
                 </div>
                 <ul class="navbar-nav">
-                    <li><a href="#">Home</a></li>
                     <li class="menu-item-has-children">
                         <a href="#">Excursion</a>
                         <ul class="sub-menu">
@@ -104,16 +104,6 @@
                             <li><a href="{% url 'mnemba' %}">Mnemba Island</a></li>
                         </ul>
                     </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Packages</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog02.html">Blog 02</a></li>
-                            <li><a href="blog03.html">Blog 03</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                            <li><a href="blog-details02.html">Blog Details 02</a></li>
-                        </ul>
-                    </li>
                     <li><a href="{% url 'transfer' %}">Transfer</a></li>
                     <li><a href=" {% url 'blog:blog' %} ">Blog</a></li>
                     <li><a href=" {% url 'about' %} ">About</a></li>
@@ -125,7 +115,7 @@
                     <li>
                         <a class="btn btn-yellow" href="tour-details.html">Book Now <i class="fa fa-paper-plane"></i></a>
                     </li>
-                    <li class="tp-lang">
+                    <!-- <li class="tp-lang">
                         <div class="tp-lang-wrap">
                             <select class="select single-select">
                               <option value="1">ENG</option>
@@ -134,7 +124,7 @@
                               <option value="3">Spanish</option>
                             </select>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -168,17 +158,29 @@
                 </div>
             </div>
         </div>
+        
+        <div class="container">
+        <h3>We Accept</h3>
+        <div class="row">
+            <div class="col-md-2"><img src="{% static 'assets/img/payment/bank.png' %}" alt="payment image" class="img-responsive"></div>
+            <div class="col-md-2"><img src="{% static 'assets/img/payment/visa.png' %}" alt="payment image" class="img-responsive"></div>
+            <div class="col-md-2"><img src="{% static 'assets/img/payment/master.png' %}" alt="payment image" class="img-responsive"></div>
+            <div class="col-md-2"><img src="{% static 'assets/img/payment/tigopesa.png' %}" alt="payment image" class="img-responsive"></div>
+            <div class="col-md-2"><img src="{% static 'assets/img/payment/mpesa.png' %}" alt="payment image" class="img-responsive"></div>
+            <div class="col-md-2"><img src="{% static 'assets/img/payment/halopesa.png' %}" alt="payment image" class="img-responsive"></div>
+            </div>
+        </div>
     </div>
     <!-- newslatter area End -->
     
     <!-- footer area start -->
-    <footer class="footer-area" style="background-image: url(assets/img/bg/2.png);">
+    <footer class="footer-area" style="background-image: url({% static 'assets/img/bg/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="footer-widget widget">
                         <div class="about_us_widget">
-                            <a href="index-2.html" class="footer-logo"> 
+                            <a href="{% url 'homepage' %}" class="footer-logo"> 
                                 <img src="{% static 'assets/img/logo.png' %}" alt="footer logo">
                             </a>
                             <p>Welcome to Zanzibar, the prestigious island getaway and exclusive destination where the rich and famous play undisturbed, yet the discerning traveler finds the island getaway of their dreams no matter what their budget.</p>
@@ -215,19 +217,6 @@
                                 </span>
                             </p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget widget">
-                        <h4 class="widget-title">We accept</h4>
-                        <ul class="widget-instagram-feed">
-                            <li><a href="#"><img src="{% static 'assets/img/instagram/1.png' %}" alt="payment image"></a></li>
-                            <li><a href="#"><img src="{% static 'assets/img/instagram/2.png' %}" alt="payment image"></a></li>
-                            <li><a href="#"><img src="{% static 'assets/img/instagram/3.png' %}" alt="payment image"></a></li>
-                            <li><a href="#"><img src="{% static 'assets/img/instagram/4.png' %}" alt="payment image"></a></li>
-                            <li><a href="#"><img src="{% static 'assets/img/instagram/5.png' %}" alt="payment image"></a></li>
-                            <li><a href="#"><img src="{% static 'assets/img/instagram/6.png' %}" alt="payment image"></a></li>
-                        </ul>
                     </div>
                 </div>
             </div>

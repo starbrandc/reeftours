@@ -1,15 +1,4 @@
 /*
-Theme Name: Travel Point
-Theme URI: 
-Author: codingeek
-Author URI: 
-Description: Travel Point - Travel, Tour Booking HTML5 Template
-Version: 1.0.0
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-
 # Typography
 # Normalize
 # Accessibility
@@ -2661,6 +2650,17 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     background-image: url("../img/banner/banner-02.jpg"); }
   .banner-slider .banner-slider-item.banner-bg-3:after {
     background-image: url("../img/banner/banner-03.jpg"); }
+  .banner-slider .banner-slider-item.banner-bg-4:after {
+    background-image: url("../img/banner/banner-03.jpg"); }
+  .banner-slider .banner-slider-item.banner-bg-5:after {
+    background-image: url("../img/banner/banner-03.jpg"); }
+  .banner-slider .banner-slider-item.banner-bg-6:after {
+    background-image: url("../img/banner/banner-03.jpg"); }
+  .banner-slider .banner-slider-item.banner-bg-7:after {
+    background-image: url("../img/banner/banner-03.jpg"); }
+  .banner-slider .banner-slider-item.banner-bg-8:after {
+    background-image: url("../img/banner/banner-03.jpg"); }
+
   .banner-slider .banner-slider-item:before {
     content: '';
     position: absolute;

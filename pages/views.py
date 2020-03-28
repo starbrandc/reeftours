@@ -1,7 +1,11 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from blog.models import Blog
+from django.views.generic import TemplateView,ListView
 # Create your views here.
-class Landing(TemplateView):
+class Landing(ListView):
+    model = Blog
+    context_object_name = "blog"
+    paginate_by = 3
     template_name = 'pages/index.html'
 
 class About(TemplateView):

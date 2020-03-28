@@ -8,6 +8,7 @@ class Blog(models.Model):
     title = models.CharField(max_length=180,null=False,blank=False)
     slug = models.SlugField(blank=True, null=False, unique=True, help_text="This field will be generated automatic")
     cover = models.ImageField(upload_to="blog")
+    published = models.DateTimeField(verbose_name="Published date", auto_now=True)
     content = RichTextUploadingField(null=False,blank=False)
 
     

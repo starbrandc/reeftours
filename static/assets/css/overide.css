@@ -1,0 +1,33 @@
+.transfer{
+  background: url(../img/bg/transfer.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  min-height: 750px;
+}
+.transfer-details{
+  background: url(../img/bg/transfer-details.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  min-height: 750px;
+}
+.transfer .content{
+    padding: 100px 0;
+    color: #fff;
+}
+.transfer p{
+    color: #fff;
+}
+.transfer h2{
+    color:#ef4423;
+}
+.svg{
+    stroke: #ef4423;
+    height: 100px;
+    width: 100px;
+}
