@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reeftours - Reach your expectations</title>
+     <!-- favicon -->
+     <link rel=icon href="{% static 'assets/img/favicon.png' %}" sizes="20x20" type="image/png">
+    <!-- animate -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!-- Slick -->
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/slick-theme.css' %}" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="{% static 'assets/css/swiper.min.css' %}" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- flaticon -->
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- responsive Stylesheet -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/overide.css' %}">
+</head>
+<body>
+
+<!-- search Popup -->
+<div class="body-overlay" id="body-overlay"></div>
+<div class="search-popup" id="search-popup">
+    <form action="index.html" class="search-form">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search.....">
+        </div>
+        <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+<!-- //. search Popup -->
+
+<div class="info-popup">
+    <div class="info-popup-content">
+        <button type="button" class="info-popup-content_close">X</button>
+        <div class="row no-gutters">
+            <div class="col-lg-7">
+                <div class="info-popup-content__img info-popup-content__img--one"></div>
+            </div>
+            <div class="col-lg-5">
+                <div class="info-popup-content__text">
+                    <div class="info-popup-content__text-header">
+                        <h3 class="info-popup-content__title">Opening Hours</h3>
+                    </div>
+                    <div class="info-popup-content__text-body">
+                        <span class="info-popup-content__text-is">moday - sunday</span>
+                        <span class="info-popup-content__text-is">8.00 am - 9.00 pm</span>
+                    </div>
+                    <div class="info-popup-content__text-footer">
+                        <span class="info-popup-content__text-is">+880 046 292 02</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--info-popup-->
+
+<div class="location-popup">
+    <div class="location-popup-content">
+        <button type="button" class="message-popup-content_close">X</button>
+        <div class="row no-gutters">
+            <div class="col-lg-7">
+                <div id="map"></div>
+            </div>
+            <div class="col-lg-5">
+                <div class="location-popup-content__text">
+                    <div class="location-popup-content__text-header">
+                        <h3 class="location-popup-content__title">Address</h3>
+                    </div>
+                    <div class="location-popup-content__text-body">
+                        <span class="location-popup-content__text-is">
+                            2, Ave Manchester, Lorem <br />
+                            ipsum St, Rio Danubin
+                        </span>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn btn-element btn-normal btn-gray">Open in maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--location-popup-->
+
+<div class="message-popup">
+    <div class="message-popup-content">
+        <button type="button" class="message-popup-content_close">X</button>
+        <div class="row no-gutters">
+            <div class="col-lg-7">
+                <div class="message-popup-content__text text-left pl-5">
+                    <div class="message-popup-content__text-header">
+                        <h3 class="message-popup-content__title mb-3">
+                            You have a question for us?
+                        </h3>
+                    </div>
+                    <div class="message-popup-content__text-body">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-12 margin-top-20">
+                                    <input type="text" placeholder="Email address" class="contact-form__input"/>
+                                </div>
+                                <div class="col-12 margin-top-20">
+                                    <textarea name="Message" placeholder="Message" class="contact-form__textarea" cols="30" rows="2" ></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="btn-wrapper desktop-center margin-top-30">
+                                        <a href="#" class="btn btn-element btn-lg btn-red">Send</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="message-popup-content__img message-popup-content__img--three"></div>
+            </div>
+        </div>
+    </div>
+</div><!--message-popup-->
+
+<!-- navbar start -->
+<div class="billa-navbar">
+    <nav class="navbar navbar-area black-bg navbar-expand-lg">
+        <div class="container nav-container">
+            <div class="responsive-mobile-menu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#billatrail_main_menu" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="logo">
+                <a href="{% url 'homepage' %}"> <img src="{% static 'assets/img/logo.png' %}" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="billatrail_main_menu">
+                <ul class="navbar-nav">
+
+                    <li class="menu-item-has-children">
+                        <a href="#">Excursion</a>
+                        <ul class="sub-menu">
+                            <li><a href="{% url 'stonetown' %}">Stone Town</a></li>
+                            <li><a href="{% url 'prison' %}">Prison Island</a></li>
+                            <li><a href="{% url 'safari' %}">Safari Blue</a></li>
+                            <li><a href="{% url 'johazi' %}">Johazi Forest</a></li>
+                            <li><a href="{% url 'dolphin' %}">Dolphin Tour</a></li>
+                            <li><a href="{% url 'spice' %}">Spice Tour</a></li>
+                            <li><a href="{% url 'dhow' %}">Dhow Sunset Cruise</a></li>
+                            <li><a href="{% url 'mnemba' %}">Mnemba Island</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'transfer' %}">Transfer</a></li>
+                    <li><a href=" {% url 'blog:blog' %} ">Blog</a></li>
+                    <li><a href=" {% url 'about' %} ">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="#" class="btn btn-element btn-lg btn-red">Book Now <i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- navbar end -->
+
+{% block content %}
+    
+{% endblock content %}
+         
+<div class="bottom-bg"></div>
+
+<!-- footer area start -->
+<footer class="footer-area footer-style-2">
+    <div class="footer-top padding-top-40 padding-bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="footer-widget widget">
+                        <div class="about_us_widget">
+                            <a href="{% url 'homepage' %}" class="footer-logo"> 
+                                <img src="{% static 'assets/img/logo-01.svg' %}" alt="footer logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="footer-widget widget widget_nav_menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Trails</a></li>
+                            <li><a href="#">Event</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Contact</a></li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget widget widget_nav_menu">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-area-inner">
+                        Reeftours {% now 'Y' %} All Right Reserved. Developed With by <i class="fa fa-heart"></i> <a>Starbrand Creative</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer area end -->
+
+<!-- back to top area start -->
+<div class="back-to-top">
+    <span class="back-top"><i class="fa fa-angle-up"></i></span>
+</div>
+<!-- back to top area end -->
+
+<!-- preloader area start -->
+<div class="preloader" id="preloader">
+    <div class="preloader-inner">
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+        </div>
+    </div>
+</div>
+<!-- preloader area end -->
+
+    <!-- jquery -->
+    <script src="{% static 'assets/js/jquery-2.2.4.min.js' %}"></script>
+    <!-- popper -->
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <!-- bootstrap -->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- magnific popup -->
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+    <!-- wow -->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <!-- nice select -->
+    <script src="{% static 'assets/js/nice-select.js' %}"></script>
+    <!-- owl carousel -->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <!-- Slick -->
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <!-- Slick Animation -->
+    <script src="{% static 'assets/js/slick-animation.js' %}"></script>
+    <!-- map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVyNXoXHkqAwBKJaouZWhHPCP5vg7N0HQ&callback=initMap" async defer></script>
+    <script src="{% static 'assets/js/map.active.js' %}"></script>
+    <!-- swiper -->
+    <script src="{% static 'assets/js/swiper.min.js' %}"></script>
+    <!-- waypoint -->
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <!-- counterup -->
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <!-- imageloaded -->
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <!-- isotope -->
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+     <!-- rProgressbar -->
+    <script src="{% static 'assets/js/jQuery.rProgressbar.min.js' %}"></script>
+    <!-- main js -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>

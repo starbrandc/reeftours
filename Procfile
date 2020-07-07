@@ -1,1 +1,1 @@
-web: gunicorn reef.wsgi --log-file -
+web: gunicorn reeftours.wsgi --log-file -

@@ -1,6 +1,6 @@
 /*--------------------
-    Countdown
----------------------*/
+            Countdown
+        ---------------------*/
 //Countdown Timer
 const countdown = document.querySelector(".countdown");
 
@@ -16,17 +16,17 @@ const intvl = setInterval(function() {
     const distance = launchDate - now;
 
     //Time calculation
-    const days = Math.floor(distance / (8000 * 60 * 60 * 24));
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const sec = Math.floor((distance % (1000 * 60)) / 1000);
 
     //Display Result
     countdown.innerHTML = `
-        <div class="countdown-item"><h2 class="countdown-number">${days}</h2><span class="countdown-text">Days</span></div>
-        <div class="countdown-item"><h2 class="countdown-number">${hours}</h2><span class="countdown-text">Hour</span></div>
-        <div class="countdown-item"><h2 class="countdown-number">${mins}</h2><span class="countdown-text">Minutes</span></div>
-        <div class="countdown-item"><h2 class="countdown-number">${sec}</h2><span class="countdown-text">Seconds</span></div>
+        <div class="countdown__item"><h2 class="countdown__lg-text">${days}</h2><span class="countdown__sm-text">Days</span></div>
+        <div class="countdown__item"><h2 class="countdown__lg-text">${hours}</h2><span class="countdown__sm-text">Hour</span></div>
+        <div class="countdown__item"><h2 class="countdown__lg-text">${mins}</h2><span class="countdown__sm-text">Minutes</span></div>
+        <div class="countdown__item"><h2 class="countdown__lg-text">${sec}</h2><span class="countdown__sm-text">Seconds</span></div>
     `;
 
     //If launch date passed
@@ -38,4 +38,3 @@ const intvl = setInterval(function() {
         countdown.innerHTML = "Launched!";
     }
 }, 1000);
-
