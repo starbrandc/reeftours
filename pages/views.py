@@ -40,3 +40,6 @@ class Mnemba(TemplateView):
 
 class Transer(TemplateView):
     template_name = 'pages/transfer.html'
+
+class Booking(TemplateView):
+    template_name = 'pages/booking.html'
