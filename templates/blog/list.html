@@ -1,0 +1,143 @@
+{% extends 'pages/base.html' %}
+{% load static %}   
+{% block content %}
+<div class="breadcrumb-area breadcrumb-style-6 margin-bottom-100">
+    <div class="breadcrumb-inner">
+        <h1 class="page-title">Blog</h1>
+        <ul class="page-list">
+            <li><a href="{% url 'homepage' %}">Home</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+</div>
+<div class="blog-content padding-85">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                
+                {% for blog in  blog %}
+                <div class="blog-left-content">
+                    <div class="img-item row margin-bottom-50">
+                        <div class="col-md-6">
+                            <div class="row h-100">
+                                <div class="blog-thumb d-flex">
+                                    <img src="assets/img/blog/image-item1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content">
+                                <h4>Biking, May 1, 2019</h4>
+                                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet semper augue.</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet semper augue. Maecenas gravida tortor sit amet enim venenatis tristique.</p>
+                                <ul class="post-meta">
+                                    <li><a href="#"><i class="fa fa-comments"></i> 1200 Comments</a></li>
+                                    <li><a href="#"><i class="fa fa-share-alt"></i> 120 Share</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <h1>Sorry we will update soon</h1>
+                {% endfor %}
+                    
+                <div class="blog-pagination margin-top-55">
+                    <ul>
+                        <li>
+                            <span class="page-bumber">1</span>
+                        </li>
+                        <li>
+                            <span class="page-bumber">2</span>
+                        </li>
+                        <li>
+                            <span class="page-bumber">3</span>
+                        </li>
+                        <li>
+                            <span class="page-bumber">4</span>
+                        </li>
+                        <li>
+                            <span class="page-bumber">5</span>
+                        </li>
+                        <li>
+                            <span class="next page-bumber"><i class="fas fa-long-arrow-right"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="col-lg-4 col-md-12">
+                <div class="blog-right-content">
+                    <h1>Most Shared</h1>
+                    <div class="share-img-item">
+                        <div class="img-part">
+                            <img src="assets/img/blog/share1.png" alt="">
+                        </div>
+                        <div class="content-part">
+                            <h4>Biking</h4>
+                            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                            <ul class="post-meta">
+                                <li><a href="#"><i class="fa fa-share-alt"></i> 120 Share</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="share-img-item">
+                        <div class="img-part">
+                            <img src="assets/img/blog/share2.png" alt="">
+                        </div>
+                        <div class="content-part">
+                            <h4>Biking</h4>
+                            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                            <ul class="post-meta">
+                                <li><a href="#"><i class="fa fa-share-alt"></i> 120 Share</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="share-img-item">
+                        <div class="img-part">
+                            <img src="assets/img/blog/share3.png" alt="">
+                        </div>
+                        <div class="content-part">
+                            <h4>Biking</h4>
+                            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                            <ul class="post-meta">
+                                <li><a href="#"><i class="fa fa-share-alt"></i> 120 Share</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="share-img-item">
+                        <div class="img-part">
+                            <img src="assets/img/blog/share4.png" alt="">
+                        </div>
+                        <div class="content-part">
+                            <h4>Biking</h4>
+                            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                            <ul class="post-meta">
+                                <li><a href="#"><i class="fa fa-share-alt"></i> 120 Share</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-right-slider margin-top-70">
+                    <div class="single-item">
+                        <img src="assets/img/blog/right-slider1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit</p>
+                        <span>Categories</span>
+                    </div>
+                    <div class="single-item">
+                        <img src="assets/img/blog/right-slider1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit</p>
+                        <span>Categories</span>
+                    </div>
+                    <div class="single-item">
+                        <img src="assets/img/blog/right-slider1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit</p>
+                        <span>Categories</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+{% endblock content %}
+    

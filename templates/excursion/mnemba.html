@@ -1,0 +1,67 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="trails-breadcrumb">
+    <div class="breadcrumb-bg"></div>
+    <div class="breadcrumb-style-4 margin-top-30">
+        <div class="breadcrumb-inner">
+            <h1 class="page-title">Stone Town</h1>
+            <ul class="page-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Stone Town</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-content container">Get to know Zanzibar's diverse cultural fabric among the 19th-century buildings of Stone Town, the island's UNESCO World Heritage Site. As you visit landmarks such as the House of Wonders, the Sultan's Palace, and the Darajani Market, discover how the city reflects a rich mix of global influences.</div>
+</div>
+
+<div class="margin-top-70 margin-bottom-70">
+    <div class="container trail-container">
+        <div class="row">
+            <div class="trail-slider">
+                <div class="slider-item">
+                    <div class="img-part">
+                        <img src="{% static 'assets/img/trails/slider1.png' %}" alt="slider1">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="img-part">
+                        <img src="{% static 'assets/img/trails/slider1.png' %}" alt="slider1">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="img-part">
+                        <img src="{% static 'assets/img/trails/slider2.png' %}" alt="slider1">
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</div>
+<div class="about-video">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8">
+                <div class="about-video-text">
+                    <p class="nohyphen p3">Set out with your guide from your hotel and travel into the heart of Stone Town, the oldest section of Zanzibar City. 
+                        As you navigate your way through winding streets marked by buildings with elaborately carved doors and elegant verandas, learn how Arab, 
+                        Indian, Persian, and European influences have blended with local Swahili traditions to shape the city's architecture and history. <br><br>
+                        
+                        Survey the hustle and bustle of the Darajani Market, which retains the lively atmosphere of the bazaars that took place on the island for centuries. 
+                        Then, discover a dark reminder of the city's past as you step into former slave chambers, which stand as the sole remnant of what was once a slave market.
+                         Next, delve into the history of the sultans who once ruled Zanzibar at the Sultan's Palace, which was built in the late 19th century.  <br><br>
+                         
+                         Next door lies the House of Wonders, a grandiose second palace that currently houses the National Museum of History and Culture. 
+                         After browsing exhibits dedicated to Zanzibar's multicultural heritage, wrap up your tour with time for shopping before returning to your hotel.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
