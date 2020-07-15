@@ -5,6 +5,7 @@ urlpatterns = [
     path('transfer',views.Transer.as_view(), name="transfer"),
     path('about-us',views.About.as_view(), name="about"),
     path('contact',views.Contact.as_view(), name="contact"),
+    path('groups',views.Groups.as_view(), name="groups"),
     path('booking',views.Booking.as_view(), name="booking"),
     path('excursion/stone-town',views.StoneTown.as_view(), name="stonetown"),
     path('excursion/prison-island',views.Prison.as_view(), name="prison"),

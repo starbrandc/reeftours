@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap");
+p{
+    hyphens: none !important;
+}
 .banner-inner h1{
     color:#61a8d0 !important;
     text-shadow: 2px 1px 2px #000; 
@@ -6,3 +10,105 @@
     hyphens: none !important;
     color: #000;
 }
+.group{
+    background-image: url('../img/bg/group.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+}
+.dark ul{
+    color: #000;
+}
+.rolling-content ul{
+    color:#000 !important;
+}
+.transfer{
+  background: url(../img/transfer.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  min-height: 600px;
+}
+.transfer-details{
+  background: url(../img/transfer.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  min-height: 600px;
+}
+.transfer .content{
+    padding: 100px 0;
+    color: #fff;
+}
+.transfer p{
+    color: #fff;
+}
+.transfer h2{
+    color:#ef4423;
+}
+.svg{
+    stroke: #ef4423;
+    height: 100px;
+    width: 100px;
+}
+.group-header{
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'Barlow', Helvetica, sans-serif;
+    margin-top: -30px;
+    margin-bottom: 70px;
+    line-height: 90px;
+}
+.group-header span{
+    color:#ef4423;;
+}
+.service-categories{
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  /*DEMO ONLY*/
+  .service-categories .card{
+    transition: all 0.2s;
+  }
+  .service-categories .card-title{
+    padding-top: 0.5em;
+  }
+  .service-categories a:hover{
+    text-decoration: none;
+  }
+  .service-card{
+    background: rgba(15, 57, 75, 0.9);
+    border: 0;
+  }
+  .service-card:hover{
+    background: rgba(232, 70, 35, 1);
+    border-right: 5px solid #1884bc;
+    border-left: 5px solid #1884bc;
+  }
+  .card-block img{
+      padding-top: 15px;
+      height: 70px;
+      width: 100%;
+  }
+  .card-title{
+    font-family: 'Barlow', Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 600;
+  }
+  .mg-top-96{
+    margin-top: 96px;
+  }
+
+  .planning{
+    margin:50px,0;
+    background: rgb(255,150,44);
+    background: linear-gradient(153deg, rgba(255,150,44,0.9948354341736695) 0%, rgba(252,84,51,1) 48%, rgba(255,139,6,0.958420868347339) 100%);
+  }
+  .mg-96{
+    padding: 96px;
+  }

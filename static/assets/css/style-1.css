@@ -73,7 +73,7 @@ Version: 1.0.0
 /*-----------------
     # Typography
 -----------------*/
-@import url("https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap");
+  
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i&amp;display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap");
 @font-face {
@@ -83,10 +83,10 @@ Version: 1.0.0
   font-style: normal; }
 
 :root {
-  --main-color: #e84623;
+  --main-color: #e84420;
   --secondary-color: #0f394b;
   --heading-color: #0f394b;
-  --paragraph-color: #0f394b;
+  --paragraph-color: #343434;
   --heading-font: 'Source Serif Pro', sans-serif;
   --body-font: 'Barlow', sans-serif;
   --secondary-font: 'Roboto', sans-serif;
@@ -1394,7 +1394,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
           color: var(--main-color); }
 
 .breadcrumb-style-6 {
-  background: url(../img/breadcrumb/1.png);
+  background: url(../img/breadcrumb/breadcrumb6.png);
   min-height: 421px;
   background-size: cover;
   position: relative; }
@@ -7142,8 +7142,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .breadcrumb-bg {
   width: 100%;
-  height: 500px;
-  background: url(../img/breadcrumb/groups.png);
+  min-height: 513px;
+  background: url(../img/trails/breadcrumb.png);
   background-size: cover;
   background-position: center center; }
 

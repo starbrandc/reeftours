@@ -1,0 +1,93 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{% block content %}
+<div class="trails-breadcrumb">
+    <div class="breadcrumb-bg"></div>
+    <div class="breadcrumb-style-4 margin-top-30">
+        <div class="breadcrumb-inner">
+            <h1 class="page-title">Groups</h1>
+            <ul class="page-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Groups</a></li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="text-center page-title">MEETING VENUES | INCENTIVE | CONFERENCE | EVENTS</h3>
+    <div class="page-content container">We are a full-service destination management company, 
+        presenting some of the most unique tours and hotels in Zanzibar. As experts with extensive experience in planning and 
+        executing creative and effective trips, our top priority is to meet the needs of your group. Plus, our local knowledge, 
+        expertise and relationships will guarantee that you experience the very best each destination has to offer. 
+        From meetings in the xxxx to incentive excursions, we are dedicated to creating unforgettable group experiences.</div>
+</div>
+
+<div class="home-rolling">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="rolling-content">
+                    <span>  </span>
+                    <div class="rolling-title">Why <br/>Choosing Us</div>
+                    <ul class="dark">
+                        <li>Full-service destination management company</li>
+                        <li>Over 15 tours in Zanzibar</li>
+                        <li>Unique services and trend-setting adventures</li>
+                        <li>Customizable group experiences</li>
+                        <li>Accommodating transportation services</li>
+                        <li>Safety first! Among the highest standards in the industry</li>
+                        <li>Expert guides and escorts born and bred in the Zanzibar island</li>
+                        <li>The best hand-picked, fun-tested excursions</li>
+                        <li>Easy and flexible booking and cancellation policies</li>
+                    </ul>
+                    {% comment %} <a href="#" class="btn btn-style-2">Book Now</a> {% endcomment %}
+                </div>
+            </div>
+            <div class="col-lg-6 position-relative">
+                <div class="home-rolling-slider home2-rolling-slider">
+                    <div class="single-item">
+                        <img src="{% static 'assets/img/rolling.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section>
+    <img src="{% static 'assets/img/bg/group.png' %}" alt="">
+</section>
+<section class="mg-top-96">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="group-header">It's all in <br><span>The </span>  <br> Details</h1>
+            </div>
+            <div class="col-md-6">
+                <p class="nohyphen">Let us handle the logistics! We have an entire team dedicated to guiding and supporting you 
+                    from start to finish. We will work closely with you to gain a comprehensive understanding of your goals, 
+                    budget and objectives. Every detail is handled with care and attention. We will get you on the fast track
+                     upon arrival, advise of any required travel documents, arrange transportation, create one-of-a-kind tour 
+                     experiences, coordinate on-site execution, and much more.</p>
+                <h3>Available Services</h3>
+
+                <ul class="nohyphen">
+                    <li>Team-building activities</li>
+                    <li>Excursions and custom tours upon request</li>
+                    <li>Off-resort event design and logistics</li>
+                    <li>Airport meet & greet</li>
+                    <li>VIP, private and group transfers</li>
+                    <li>On-site hospitality desks</li>
+                    <li>Local cell phone rental</li>
+                    <li>Language interpretation services</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="planning mg-96">
+    <div class="container">
+        <p>We believe that unique experiences are essential to successful destination meeting and reward travel. 
+            When it comes to groups, we understand that everyone has different interests, goals and needs.
+             So, whether you're seeking endless adventure, a cultural immersion or a philanthropic journey, 
+             Reef Tours & Travel offers experiences for groups of all sizes, ranging from totally wild to leisurely mild.</p>
+    </div>
+</section>
+{% endblock content %}

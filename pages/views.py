@@ -43,3 +43,6 @@ class Transer(TemplateView):
 
 class Booking(TemplateView):
     template_name = 'pages/booking.html'
+
+class Groups(TemplateView):
+    template_name = 'pages/groups.html'
