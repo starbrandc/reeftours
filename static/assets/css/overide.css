@@ -112,3 +112,12 @@ p{
   .mg-96{
     padding: 96px;
   }
+  .card-block .fa{
+    font-size: 100px;
+    text-align: center;
+  }
+  .card-block i{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
