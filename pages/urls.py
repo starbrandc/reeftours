@@ -7,6 +7,7 @@ urlpatterns = [
     path('contact',views.Contact.as_view(), name="contact"),
     path('groups',views.Groups.as_view(), name="groups"),
     path('booking',views.Booking.as_view(), name="booking"),
+    path('before-visiting',views.Before.as_view(), name="before-visiting"),
     path('excursion/stone-town',views.StoneTown.as_view(), name="stonetown"),
     path('excursion/prison-island',views.Prison.as_view(), name="prison"),
     path('excursion/safari-blue',views.Safari.as_view(), name="safari"),

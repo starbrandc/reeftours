@@ -46,3 +46,6 @@ class Booking(TemplateView):
 
 class Groups(TemplateView):
     template_name = 'pages/groups.html'
+
+class Before(TemplateView):
+    template_name = 'pages/before.html'
