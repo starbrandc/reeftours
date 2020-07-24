@@ -83,11 +83,6 @@
             <span>Scroll to explore</span>
         </div>
 
-        <!-- biking btn -->
-        <div class="banner-btn d-none d-md-block ">
-            <a href="#" class="btn animated slideRotateFromRight">Real Zanzibar Experience<span></span></a>
-        </div>
-
         <div class="banner-bottom">
             <div class="container">
                 <div class="row">
@@ -136,7 +131,7 @@
         
         <div class="container">
             <div class="row">
-                <div class="about-title about-title-1">About Us</div>
+                <div class="about-title about-title-1">About us</div>
             </div>
         </div>
         <div class="container">
@@ -154,18 +149,24 @@
                 </div>
                 <div class="col-lg-4 offset-lg-1">
                     <div class="home-about-slider">
-                        <div class="single-item">
-                            <img src="{% static 'assets/img/home1/about-slider1.png' %}" alt="">
-                            <h3>Ready to explore the island?</h3>
-                        </div>
-                        <div class="single-item">
-                            <img src="{% static 'assets/img/home1/about-slider2.png' %}" alt="">
-                            <h3>Worry Free</h3>
-                        </div>
-                        <div class="single-item">
-                            <img src="{% static 'assets/img/home1/about-slider3.png' %}" alt="">
-                            <h3>Personalized </br>service </h3>
-                        </div>
+                        <a href="{% url 'transfer' %}">
+                            <div class="single-item">
+                                <img src="{% static 'assets/img/home1/about-slider1.png' %}" alt="">
+                                <h3>Ready to explore the island?</h3>
+                            </div>
+                        </a>
+                        <a href="{% url 'groups' %}">
+                            <div class="single-item">
+                                <img src="{% static 'assets/img/home1/about-slider2.png' %}" alt="">
+                                <h3>Worry Free</h3>
+                            </div>
+                        </a>
+                        <a href="{% url 'transfer' %}">
+                            <div class="single-item">
+                                <img src="{% static 'assets/img/home1/about-slider3.png' %}" alt="">
+                                <h3>Personalized </br>service </h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
