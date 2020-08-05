@@ -2223,7 +2223,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
           color: var(--main-color); }
         .navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children {
           position: relative;
-          z-index: 0; }
+          z-index: 999; }
           .navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children:before {
             position: absolute;
             right: 0;
@@ -7149,21 +7149,21 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
   .breadcrumb-bg-stone {
     width: 100%;
-    height: 500px;
+    height: 650px;
     background: url(../img/breadcrumb/groups.png);
     background-size: cover;
     background-position: center center; }
 
 .breadcrumb-bg-prison {
       width: 100%;
-      height: 500px;
+      height: 650px;
       background: url(../img/breadcrumb/groups.png);
       background-size: cover;
       background-position: center center; }
 
 .breadcrumb-bg-safari {
         width: 100%;
-        height: 500px;
+        height: 650px;
         background: url(../img/breadcrumb/groups.png);
         background-size: cover;
         background-position: center center; 
