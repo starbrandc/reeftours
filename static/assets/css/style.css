@@ -7150,37 +7150,58 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .breadcrumb-bg-stone {
     width: 100%;
     height: 650px;
-    background: url(../img/breadcrumb/groups.png);
+    background: url(../img/breadcrumb/ex-stone.jpg);
     background-size: cover;
     background-position: center center; }
 
 .breadcrumb-bg-prison {
       width: 100%;
       height: 650px;
-      background: url(../img/breadcrumb/groups.png);
+      background: url(../img/breadcrumb/ex-prison.jpg);
       background-size: cover;
       background-position: center center; }
 
 .breadcrumb-bg-safari {
         width: 100%;
         height: 650px;
-        background: url(../img/breadcrumb/groups.png);
+        background: url(../img/breadcrumb/ex-safari.jpg);
         background-size: cover;
         background-position: center center; 
       }
 .breadcrumb-bg-dolphin {
         width: 100%;
-        height: 500px;
-        background: url(../img/breadcrumb/groups.png);
+        height: 650px;
+        background: url(../img/breadcrumb/ex-dolphin.jpg);
         background-size: cover;
         background-position: center center; }
 
-        .breadcrumb-bg-dhow {
+.breadcrumb-bg-dhow {
+        width: 100%;
+        height: 650px;
+        background: url(../img/breadcrumb/ex-dhow.jpg);
+        background-size: cover;
+        background-position: center center; }
+
+.breadcrumb-bg-spice {
           width: 100%;
-          height: 500px;
-          background: url(../img/breadcrumb/groups.png);
+          height: 650px;
+          background: url(../img/breadcrumb/ex-Spice.jpg);
           background-size: cover;
           background-position: center center; }
+
+.breadcrumb-bg-mnemba {
+            width: 100%;
+            height: 650px;
+            background: url(../img/breadcrumb/ex-mnemba.jpg);
+            background-size: cover;
+            background-position: center center; }
+
+            .breadcrumb-bg-transfer {
+              width: 100%;
+              height: 650px;
+              background: url(../img/breadcrumb/ex-transfer.jpg);
+              background-size: cover;
+              background-position: center center; }
 
 
 .header-5 .left {
