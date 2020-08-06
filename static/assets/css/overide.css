@@ -91,6 +91,9 @@ p{
     border-right: 5px solid #1884bc;
     border-left: 5px solid #1884bc;
   }
+  .card-block{
+    padding: 40px;
+  }
   .card-block img{
       padding-top: 15px;
       height: 70px;
@@ -258,95 +261,38 @@ p{
        flex: 0 0 50%;
     }
   }
-  
-  /* AUTHOR LINK */
-  
-  
-  footer{
-    z-index: 100;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-  }
-  
-  footer p {
-  color: rgba(255, 255, 255, 0.8);
-    font-size: 16px;
-    opacity: 0;
-    font-family: 'Open Sans';
-    width: 100%;
-      word-wrap: break-word;
-    line-height: 25px;
-    -webkit-transform: translateX(-200px);
-    transform: translateX(-200px);
-    margin: 0;
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    transition: all 250ms ease;
-  }
-  
-  footer .authorWindow a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  footer p strong {
-      color: rgba(255, 255, 255, 0.9);
-  }
-  
-  .about-me-img {
-    width: 120px;
-    height: 120px;
-    left: 10px;
-    /* bottom: 30px; */
-    position: relative;
-    border-radius: 100px;
-  }
-  
-  
-  .about-me-img img {
-  }
-  
-  
-  .authorWindow{
-    width: 600px;
-    background: #75439a;
-    padding: 22px 20px 22px 20px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .authorWindowWrapper{
-    display: none;
-    left: 110px;
-    top: 0;
-    padding-left: 25px;
-    position: absolute;
-  }
+.gradient {
+  display: block;
+  font-weight: 900;
+  font-family: 'Barlow', Helvetica, sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #000;
+  padding: 5rem 8rem;
+  background: rgb(255,150,44);
+  background: linear-gradient(153deg, rgba(255,150,44,0.9948354341736695) 0%, rgba(252,84,51,1) 48%, rgba(255,139,6,0.958420868347339) 100%);
+  position: relative;
+  z-index: 1;
+}
 
-  .trans{
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    transition: all 500ms ease;
-  }
-  
-  @media screen and (max-width: 768px) {
-      .authorWindow{
-           width: 210px;
-      }
-  
-      .authorWindowWrapper{
-               bottom: -170px;
-    margin-bottom: 20px;
-      }
-  
-      footer p{
-            font-size: 14px;
-      }
-  }
-  
+
+.gradient::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(344, 100%, 50%),
+    hsl(31, 100%, 40%)
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.gradient:hover::before {
+  opacity: 1;
+}
