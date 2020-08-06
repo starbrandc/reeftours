@@ -296,3 +296,6 @@ p{
 .gradient:hover::before {
   opacity: 1;
 }
+.TA_selfserveprop{
+  text-align: center;
+}
