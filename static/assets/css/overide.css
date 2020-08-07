@@ -110,8 +110,8 @@ p{
 
   .planning{
     margin:0,50;
-    background: rgb(255,150,44);
-    background: linear-gradient(153deg, rgba(255,150,44,0.9948354341736695) 0%, rgba(252,84,51,1) 48%, rgba(255,139,6,0.958420868347339) 100%);
+    background: rgb(33,33,150);
+    background: linear-gradient(153deg, rgba(33,33,150,1) 0%, rgba(0,212,255,1) 100%);
   }
   .mg-96{
     padding: 96px 0;
@@ -265,12 +265,12 @@ p{
   display: block;
   font-weight: 900;
   font-family: 'Barlow', Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 3em;
   text-align: center;
-  color: #000;
+  color: #fff;
   padding: 5rem 8rem;
-  background: rgb(255,150,44);
-  background: linear-gradient(153deg, rgba(255,150,44,0.9948354341736695) 0%, rgba(252,84,51,1) 48%, rgba(255,139,6,0.958420868347339) 100%);
+  background: rgb(33,33,150);
+  background: linear-gradient(153deg, rgba(33,33,150,1) 0%, rgba(0,212,255,1) 100%);
   position: relative;
   z-index: 1;
 }
@@ -285,8 +285,8 @@ p{
   left: 0;
   background-image: linear-gradient(
     to bottom,
-    hsl(344, 100%, 50%),
-    hsl(31, 100%, 40%)
+    rgba(33,33,150,1),
+    rgba(0,212,255,1)
   );
   z-index: -1;
   transition: opacity 0.5s linear;
