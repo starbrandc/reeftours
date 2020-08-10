@@ -296,6 +296,11 @@ p{
 .gradient:hover::before {
   opacity: 1;
 }
-.TA_selfserveprop{
-  text-align: center;
+ul .widSSPBullet{
+  background-color: #101F2E;
+  margin-top: 10px;
+}
+.widSSPBullet{
+  font-size: 10pt;
+  font-family:'Barlow', Helvetica, sans-serif 
 }
