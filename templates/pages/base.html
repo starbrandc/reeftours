@@ -129,7 +129,7 @@
     <!-- navbar navbar-expand-md navbar-dark fixed-top bg-dark -->
     <!-- navbar start nav-style-02-->
     <div class="billa-navbar">
-        <nav class="navbar navbar-expand-md bg-dark fixed-top navbar-area nav-style-02" id="navbar">
+        <nav class="navbar navbar-expand-md bg-dark fixed-top navbar-area nav-style-01" id="navbar">
             <div class="container nav-container">
                 <div class="responsive-mobile-menu">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#billatrail_main_menu" 
@@ -177,7 +177,29 @@
         
         
     <div class="bottom-bg"></div>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v8.0'
+    });
+  };
 
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="225456004703655">
+</div>
     <!-- footer area start -->
     <footer class="footer-area footer-style-2">
         <div class="footer-top padding-top-40 padding-bottom-0">
