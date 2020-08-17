@@ -83,5 +83,6 @@ $('#number4').jQuerySimpleCounter({end: 246,duration: 2500});
     }, function(){
         $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
     });
+  
 });	
-   
+

@@ -604,10 +604,16 @@
         -------------------------------------*/
 
         $('.owl-carousel').owlCarousel({
-            stagePadding: 100,
+            // center: true,
+            loop:true,
+            margin:30,
+            autoplay: true,
+            lazyLoad: true,
             loop: true,
-            margin: 0,
-            nav: true,
+            autoHeight: true,
+            rewind: true,
+            dots: true,
+            nav:true,
             responsive: {
                 0: {
                     items: 1
@@ -616,7 +622,7 @@
                     items: 3
                 },
                 1000: {
-                    items: 5
+                    items: 4
                 }
             }
         })
