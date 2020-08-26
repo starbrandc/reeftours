@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from blog.models import Blog
-from django.views.generic import TemplateView,ListView
+from . models import Booking
+from . forms import BookingForm
+from django.views.generic import TemplateView,ListView,CreateView
 # Create your views here.
 class Landing(ListView):
     model = Blog
@@ -41,11 +43,14 @@ class Mnemba(TemplateView):
 class Transer(TemplateView):
     template_name = 'pages/transfer.html'
 
-class Booking(TemplateView):
-    template_name = 'pages/booking.html'
-
 class Groups(TemplateView):
     template_name = 'pages/groups.html'
 
 class Before(TemplateView):
     template_name = 'pages/before.html'
+
+
+class BookingCreateView(CreateView):
+    model = Booking
+    form_class = BookingForm
+    template_name = "pages/booking.html"

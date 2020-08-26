@@ -398,3 +398,7 @@ span {
   border-color: #fff;
   border-radius: 4px;
 }
+.asteriskField{
+  font-size: 18px;
+  display: none;
+}

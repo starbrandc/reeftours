@@ -1,5 +1,7 @@
 {% extends 'pages/base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
+
 
 {% block content %}
 <div class="breadcrumb-area breadcrumb-style-6 margin-bottom-100">
@@ -17,31 +19,10 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2 d-flex justify-content-center">
                 <div class="form-group">
-                    <form action="#" class="form">
-                        <div class="form-field margin-top-30">
-                            <label for="from">From</label>
-                            <input type="date" placeholder="Enter Your Email Address" class="input-form"/>
-                        </div>
-
-                        <div class="form-field margin-top-30">
-                            <label for="to">To</label>
-                            <input type="date" placeholder="Enter Your Email Address" class="input-form"/>
-                        </div>
-                        <div class="form-field margin-top-30">
-                            <select class="select-form country_select">
-                                <option value="all" selected>Select Trip</option>
-                                <option value="stone">Stone Town</option>
-                                <option value="prison">Prison Island</option>
-                                <option value="safari">Johazi Forest</option>
-                                <option value="safari">Dolphin Tour</option>
-                                <option value="safari">Spice Tour</option>
-                                <option value="safari">Dhow Sunset Cruise</option>
-                                <option value="safari">Mnemba Island</option>
-                            </select>
-                        </div>
-                        <input type="submit" value="Book Now" class="btn btn-element btn-lg btn-active">
+                    <form action="" class="form">
+                        {{form | crispy}}
                     </form>
-                </div>
+                </div>                
             </div>
         </div>
     </div>

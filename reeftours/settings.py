@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ckeditor',
     'pages',
-    'blog'
+    'blog',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -150,3 +151,5 @@ CKEDITOR_CONFIGS = {
         'toolbar': None,
     },
 }
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
