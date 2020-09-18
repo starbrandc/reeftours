@@ -49,6 +49,12 @@ class Groups(TemplateView):
 class Before(TemplateView):
     template_name = 'pages/before.html'
 
+class Quadbike(TemplateView):
+    template_name = 'excursion/quad.html'
+
+class Fishing(TemplateView):
+    template_name = 'excursion/fishing.html'
+
 
 class BookingCreateView(CreateView):
     model = Booking

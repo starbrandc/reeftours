@@ -1,0 +1,119 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="trails-breadcrumb">
+    <div class="breadcrumb-bg-bikes"></div>
+    <div class="breadcrumb-style-4 margin-top-30">
+        <div class="breadcrumb-inner">
+            <h1 class="page-title">Quad Bikes</h1>
+            <ul class="page-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Quad Bikes</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-content container">
+        Before leaving, you will receive a brief briefing, information and procedures from professional and experienced instructors. In order to participate in the unforgettable experience, you must have a driver's license.
+    </div>
+</div>
+
+<div class="margin-top-70 margin-bottom-70">
+    <div class="container trail-container">
+        <div class="row">
+            <div class="trail-slider">
+                <div class="slider-item">
+                    <div class="img-part">
+                        <img src="{% static 'assets/img/trails/slider1.png' %}" alt="slider1">
+                    </div>
+                </div>  
+                <div class="slider-item">
+                    <div class="img-part">
+                        <img src="{% static 'assets/img/trails/slider1.png' %}" alt="slider1">
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="img-part">
+                        <img src="{% static 'assets/img/trails/slider2.png' %}" alt="slider1">
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</div>
+<div class="about-video">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8">
+                <div class="about-video-text">
+                    <p class="nohyphen p3">Discover the most authentic places on the island and enjoy field trips and views that include:
+                        <ol>
+                            <li>A meeting with the children of the villages and houses made of red earth and mud.</li>
+                            <li> Baobab trees, fruit plantations and coconut trees, sugarcane plantations, pineapples and rice fields.</li>
+                            <li>An overview and historical background of Zanzibar from the guide.</li>
+                        </ol>
+                    </p>
+                    <h6>Tour Includes</h6>
+                    <ul>
+                        <li>Private transportation.</li>
+                        <li>Helmet (must be worn at all times when riding)•</li>
+                        <li>Safety briefing prior to departure</li>
+                        <li>Introduction to Quads & explanation of controls</li>
+                        <li>Practice ride to assess ability</li>
+                        <li>Professional tuition at all times</li>
+                        <li>Visiting two villages and cave</li>
+                        <li>Mineral water</li>
+
+                    </ul>
+                    <h6>Safety First!</h6>
+                    <ul>
+                        <li>Only persons over 18 years old can drive a quad (Kids over 8 years may take a part in a tour as a passenger)</li>
+                        <li>You are obliged to wear a helmet</li>
+                        <li>It is forbidden to overtake the guide or other participants of the trip</li>
+                        <li>Keep safety distance between the quads</li>
+                        <li>Always keep two hands on a handlebar. Do not take the photos during the ride. You will have plenty of stops to take a picture</li>
+                        <li><b>NOTE: This is not an extreme ride, no jumping or speeding.</b></li>
+                        <li>Any clients suspected of being under the influence of alcohol or drugs will not be allowed to do this activity</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                <div class="about-video-text">
+                    <div class="selling">
+                        <h6>Duration: 6 Hours</h6>
+                        <p class="nohyphen p3">Starting time 09:00AM. Please let us know if you want to customize the timing of stone town tour according to your schedule.
+                        </p>
+                    </div>
+
+                    <div class="selling">
+                        <h6>Meeting point</h6>
+                        <p class="nohyphen p3">Our representative will meet you at the hotel lobby at the arranged time.</p>
+                    </div>
+
+                    <div class="selling">
+                        <h6>Departs from</h6>
+                        <p class="nohyphen p3">Nungwi/Kendwa/Muyuni Beach, North Zanzibar</p>
+                    </div>
+
+                    <div class="selling">
+                        <h6>Live tour guide</h6>
+                        <p class="nohyphen p3">We offer this tour in English, French, Spanish, and Italian.
+                            <blockquote class="nohyphen">For any other nationalities please advise when sending your inquiry so we can make an arrangement for you</blockquote>
+                        </p>
+                    </div>
+                    <div class="selling">
+                        <h6>COVID-19</h6>
+                        <p class="nohyphen p3">We are following the necessary safety measures as advised to all tour 
+                            operators by WTTC for our clients’ comfort and ours as well. Face masks are required, please bring your own.</p>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'pages/cta.html' %}
+
+
+{% endblock content %}

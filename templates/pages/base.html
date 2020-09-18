@@ -129,7 +129,7 @@
     <!-- navbar navbar-expand-md navbar-dark fixed-top bg-dark -->
     <!-- navbar start nav-style-02-->
     <div class="billa-navbar">
-        <nav class="navbar navbar-expand-md bg-dark fixed-top navbar-area nav-style-01" id="navbar">
+        <nav class="navbar navbar-expand-md bg-light fixed-top navbar-area nav-style-01" id="navbar">
             <div class="container nav-container">
                 <div class="responsive-mobile-menu">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#billatrail_main_menu" 
@@ -141,7 +141,7 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="{% url 'homepage' %}"> <img src="{% static 'assets/img/logo.png' %}" alt="logo"></a>
+                    <a href="{% url 'homepage' %}"> <img src="{% static 'assets/img/logo-01.png' %}" alt="logo" style="height:48px;"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="billatrail_main_menu">
                     <ul class="navbar-nav">
@@ -156,6 +156,8 @@
                                 <li><a href="{% url 'spice' %}">Spice Tour</a></li>
                                 <li><a href="{% url 'dhow' %}">Dhow Sunset Cruise</a></li>
                                 <li><a href="{% url 'mnemba' %}">Mnemba Island</a></li>
+                                <li><a href="{% url 'quad' %}">Quad Bikes</a></li>
+                                <li><a href="{% url 'fishing' %}">Game Fishing Trip</a></li>
                             </ul>
                         </li>
                         <li><a href="{% url 'transfer' %}">Transfer</a></li>
@@ -231,7 +233,7 @@
                     <div class="col-lg-3 col-md-4">
                         <div class="footer-widget widget widget_nav_menu">
                             <ul>
-                                <li><a href="https://www.facebook.com/codingeek.net/" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>

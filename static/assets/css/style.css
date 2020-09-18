@@ -7146,6 +7146,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     background-size: cover;
     background-position: center center; }
 
+    .breadcrumb-bg-fishing {
+      width: 100%;
+      height: 650px;
+      background: url(../img/breadcrumb/ex-fishing.jpg);
+      background-size: cover;
+      background-position: center center; }
+
+      .breadcrumb-bg-bikes {
+        width: 100%;
+        height: 650px;
+        background: url(../img/breadcrumb/ex-bikes.jpg);
+        background-size: cover;
+        background-position: center center; }
+
 .breadcrumb-bg-prison {
       width: 100%;
       height: 650px;

@@ -16,4 +16,6 @@ urlpatterns = [
     path('excursion/spice-tour',views.Spice.as_view(), name="spice"),
     path('excursion/dhow-sunset-cruise',views.Dhow.as_view(), name="dhow"),
     path('excursion/mnemba-island',views.Mnemba.as_view(), name="mnemba"),
+    path('excursion/quad-bikes',views.Quadbike.as_view(), name="quad"),
+    path('excursion/fishing-game',views.Fishing.as_view(), name="fishing"),
 ]
