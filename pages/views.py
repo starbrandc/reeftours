@@ -2,7 +2,7 @@ from django.shortcuts import render
 from blog.models import Blog
 from . models import Booking
 from . forms import BookingForm
-from django.views.generic import TemplateView,ListView,CreateView
+from django.views.generic import TemplateView,ListView,CreateView,FormView
 # Create your views here.
 class Landing(ListView):
     model = Blog
@@ -56,7 +56,7 @@ class Fishing(TemplateView):
     template_name = 'excursion/fishing.html'
 
 
-class BookingCreateView(CreateView):
+class BookingCreateView(FormView):
     model = Booking
     form_class = BookingForm
     template_name = "pages/booking.html"

@@ -13,7 +13,6 @@
      <link rel=icon href={% static 'assets/img/favicon.png' %} sizes="20x20" type="image/png">
     <!-- animate -->
     <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
-    <!-- bootstrap -->
     <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -38,6 +37,14 @@
     <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
 
     <link rel="stylesheet" href="{% static 'assets/css/overide.css' %}">
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker({
+                numberOfMonths: 3,
+                showButtonPanel: true
+            });
+        } );
+        </script>
 </head>
 <body>
 
@@ -294,6 +301,7 @@
     <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
      <!-- rProgressbar -->
     <script src="{% static 'assets/js/jQuery.rProgressbar.min.js' %}"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <!-- contact form -->
     <script src="{% static 'assets/js/contact.js' %}"></script>
     <!-- main js -->
@@ -301,6 +309,4 @@
     <script src="{% static 'assets/js/overide.js' %}"></script>
     <script src="{% static 'assets/js/main.js' %}"></script>
 </body>
-
-<!-- Mirrored from codingeek.net/html/billatrail/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jul 2020 09:57:25 GMT -->
 </html>

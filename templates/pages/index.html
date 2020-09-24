@@ -127,7 +127,7 @@
                     <p class="card-text">Set out with your guide from your hotel and travel into the heart of Stone
                         Town, the oldest section of Zanzibar City... </p>
                     <div class="link d-flex">
-                        <a href="#" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'stonetown' %}" class="card-link text-warning">Read More</a>
                         <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
                     </div>
                 </div>
@@ -136,91 +136,27 @@
 
         <div class="item">
             <div class="card">
-                <img class="card-img" src="{% static 'assets/img/tour/prison.jpg' %}" alt="Prison Island">
+                <img class="card-img" src="{% static 'assets/img/tour/fishing.jpg' %}" alt="Game Fishing Trip">
                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                    <h2 class="card-title">Prison Island</h2>
-                    <p class="card-text">Travel to Prison Island, known locally as Changuu. The island's most famous
-                        inhabitant, a 192-year-old tortoise </p>
+                    <h2 class="card-title">Game Fishing</h2>
+                    <p class="card-text"> We organize a half day Zanzibar fishing charter which is the perfect way to Escape your Hotel</p>
                     <div class="link d-flex">
-                        <a href="#" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'fishing' %}" class="card-link text-warning">Read More</a>
                         <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="item">
-            <div class=" card">
-                <img class="card-img" src="{% static 'assets/img/tour/safari-b.jpg' %}" alt="safari blue">
-                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                    <h2 class="card-title">Safari Blue</h2>
-                    <p class="card-text">Enjoy snorkeling surrounded by uninhabited islands, try your hand at paddling a
-                        ngalawa canoe, catch sights of incredible marine life.</p>
-                    <div class="link d-flex">
-                        <a href="#" class="card-link text-warning">Read More</a>
-                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class=" card">
-                <img class="card-img" src="{% static 'assets/img/tour/johazi.jpg' %}" alt="Johazi">
-                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                    <h2 class="card-title">Johazi Forest</h2>
-                    <p class="card-text">Venture into the jungle of Jozani Forest to spot the area's red colobus monkeys
-                        as
-                        they swing and howl in the trees. </p>
-                    <div class="link d-flex">
-                        <a href="#" class="card-link text-warning">Read More</a>
-                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
         <div class="item">
             <div class="card">
-                <img class="card-img" src="{% static 'assets/img/tour/dolphin.jpg' %}" alt="Dolphin Tour">
+                <img class="card-img" src="{% static 'assets/img/tour/quadbikes.jpg' %}" alt="Quad Bikes">
                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                    <h2 class="card-title">Dolphin Tour</h2>
+                    <h2 class="card-title">Quad Bikes</h2>
                     <p class="card-text">Set out with your guide from your hotel and travel into the heart of Stone
                         Town, the oldest section of Zanzibar City... </p>
                     <div class="link d-flex">
-                        <a href="#" class="card-link text-warning">Read More</a>
-                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="card">
-                <img class="card-img" src="{% static 'assets/img/tour/spice.jpg' %}" alt="Spice Tour">
-                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                    <h2 class="card-title">Spice Tour</h2>
-                    <p class="card-text">Travel to Prison Island, known locally as Changuu. The island's most famous
-                        inhabitant, a 192-year-old tortoise </p>
-                    <div class="link d-flex">
-                        <a href="#" class="card-link text-warning">Read More</a>
-                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class=" card">
-                <img class="card-img" src="{% static 'assets/img/tour/dhow.jpg' %}" alt="Dhow Sunset Cruise">
-                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                    <h2 class="card-title">Dhow Cruise</h2>
-                    <p class="card-text">Enjoy snorkeling surrounded by uninhabited islands, try your hand at
-                        paddling a
-                        ngalawa canoe, catch sights of incredible marine life.</p>
-                    <div class="link d-flex">
-                        <a href="#" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'quad' %}" class="card-link text-warning">Read More</a>
                         <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
                     </div>
                 </div>
@@ -236,7 +172,116 @@
                         monkeys as
                         they swing and howl in the trees. </p>
                     <div class="link d-flex">
-                        <a href="#" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'mnemba' %}" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="card">
+                <img class="card-img" src="{% static 'assets/img/tour/prison.jpg' %}" alt="Prison Island">
+                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                    <h2 class="card-title">Prison Island</h2>
+                    <p class="card-text">Travel to Prison Island, known locally as Changuu. The island's most famous
+                        inhabitant, a 192-year-old tortoise </p>
+                    <div class="link d-flex">
+                        <a href="{% url 'prison' %}" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class=" card">
+                <img class="card-img" src="{% static 'assets/img/tour/safari-b.jpg' %}" alt="safari blue">
+                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                    <h2 class="card-title">Safari Blue</h2>
+                    <p class="card-text">Enjoy snorkeling surrounded by uninhabited islands, try your hand at paddling a
+                        ngalawa canoe, catch sights of incredible marine life.</p>
+                    <div class="link d-flex">
+                        <a href="{% url 'safari' %}" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class=" card">
+                <img class="card-img" src="{% static 'assets/img/tour/johazi.jpg' %}" alt="Johazi">
+                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                    <h2 class="card-title">Jozani Forest</h2>
+                    <p class="card-text">Venture into the jungle of Jozani Forest to spot the area's red colobus monkeys
+                        as
+                        they swing and howl in the trees. </p>
+                    <div class="link d-flex">
+                        <a href="{% url 'johazi' %}" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="card">
+                <img class="card-img" src="{% static 'assets/img/tour/dolphin.jpg' %}" alt="Dolphin Tour">
+                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                    <h2 class="card-title">Dolphin Tour</h2>
+                    <p class="card-text">Set out with your guide from your hotel and travel into the heart of Stone
+                        Town, the oldest section of Zanzibar City... </p>
+                    <div class="link d-flex">
+                        <a href="{% url 'dolphin' %}" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="card">
+                <img class="card-img" src="{% static 'assets/img/tour/spice.jpg' %}" alt="Spice Tour">
+                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                    <h2 class="card-title">Spice Tour</h2>
+                    <p class="card-text">Travel to Prison Island, known locally as Changuu. The island's most famous
+                        inhabitant, a 192-year-old tortoise </p>
+                    <div class="link d-flex">
+                        <a href="{% url 'spice' %}" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class=" card">
+                <img class="card-img" src="{% static 'assets/img/tour/dhow.jpg' %}" alt="Dhow Sunset Cruise">
+                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                    <h2 class="card-title">Dhow Cruise</h2>
+                    <p class="card-text">Enjoy snorkeling surrounded by uninhabited islands, try your hand at
+                        paddling a
+                        ngalawa canoe, catch sights of incredible marine life.</p>
+                    <div class="link d-flex">
+                        <a href="{% url 'dhow' %}" class="card-link text-warning">Read More</a>
+                        <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class=" card">
+                <img class="card-img" src="{% static 'assets/img/tour/mnemba.jpg' %}" alt="Mnemba Island">
+                <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                    <h2 class="card-title">Mnemba Island</h2>
+                    <p class="card-text">Venture into the jungle of Jozani Forest to spot the area's red colobus
+                        monkeys as
+                        they swing and howl in the trees. </p>
+                    <div class="link d-flex">
+                        <a href="{% url 'mnemba' %}" class="card-link text-warning">Read More</a>
                         <a href="{% url 'booking' %}" class="card-link text-warning">Book a Trip</a>
                     </div>
                 </div>
