@@ -6,6 +6,7 @@ urlpatterns = [
     path('about-us',views.About.as_view(), name="about"),
     path('contact',views.Contact.as_view(), name="contact"),
     path('groups',views.Groups.as_view(), name="groups"),
+    path('faq',views.Faq.as_view(),name="faq"),
     path('booking',views.BookingCreateView.as_view(), name="booking"),
     path('before-visiting',views.Before.as_view(), name="before-visiting"),
     path('excursion/stone-town',views.StoneTown.as_view(), name="stonetown"),
@@ -18,4 +19,5 @@ urlpatterns = [
     path('excursion/mnemba-island',views.Mnemba.as_view(), name="mnemba"),
     path('excursion/quad-bikes',views.Quadbike.as_view(), name="quad"),
     path('excursion/fishing-game',views.Fishing.as_view(), name="fishing"),
+
 ]

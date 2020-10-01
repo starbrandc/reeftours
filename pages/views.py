@@ -73,6 +73,9 @@ class BookingCreateView(FormView):
             subject=form.cleaned_data.get('subject').strip(),
             message=message,
             from_email='contact-form@myapp.com',
-            recipient_list=[settings.LIST_OF_EMAIL_RECIPIENTS],
+            recipient_list=[],
         )
         return super(BookingCreateView, self).form_valid(form)
+
+class Faq(TemplateView):
+    template_name = "pages/faq.html"
