@@ -152,4 +152,6 @@ CKEDITOR_CONFIGS = {
     },
 }
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
+SENDGRID_API_KEY = ["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"]
 
