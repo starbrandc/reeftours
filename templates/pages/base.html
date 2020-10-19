@@ -1,21 +1,22 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
 {% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reeftours - Reach your expectations</title>
-     <!-- favicon -->
-     <link rel=icon href={% static 'assets/img/favicon.png' %} sizes="20x20" type="image/png">
+    <!-- favicon -->
+    <link rel=icon href={% static 'assets/img/favicon.png' %} sizes="20x20" type="image/png">
     <!-- animate -->
     <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <!-- magnific popup -->
     <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
     <!-- Slick -->
@@ -38,6 +39,7 @@
 
     <link rel="stylesheet" href="{% static 'assets/css/overide.css' %}">
 </head>
+
 <body>
 
     <!-- preloader area start -->
@@ -63,30 +65,6 @@
     </div>
     <!-- //. search Popup -->
 
-    <div class="info-popup">
-        <div class="info-popup-content">
-            <button type="button" class="info-popup-content_close">X</button>
-            <div class="row no-gutters">
-                <div class="col-xl-7 col-12 col-sm-6">
-                    <div class="info-popup-content__img info-popup-content__img--one"></div>
-                </div>
-                <div class="col-xl-5 col-12 col-sm-6">
-                    <div class="info-popup-content__text">
-                        <div class="info-popup-content__text-header">
-                            <h3 class="info-popup-content__title">Opening Hours</h3>
-                        </div>
-                        <div class="info-popup-content__text-body">
-                            <span class="info-popup-content__text-is">monday - sunday</span>
-                            <span class="info-popup-content__text-is">8.00 am - 9.00 pm</span>
-                        </div>
-                        <div class="info-popup-content__text-footer">
-                            <span class="info-popup-content__text-is">+255 785 440 333</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--info-popup-->
 
 
     <div class="message-popup">
@@ -104,10 +82,11 @@
                             <form action="#">
                                 <div class="row">
                                     <div class="col-12 margin-top-20">
-                                        <input type="text" placeholder="Email address" class="contact-form__input"/>
+                                        <input type="text" placeholder="Email address" class="contact-form__input" />
                                     </div>
                                     <div class="col-12 margin-top-20">
-                                        <textarea name="Message" placeholder="Message" class="contact-form__textarea" cols="30" rows="2" ></textarea>
+                                        <textarea name="Message" placeholder="Message" class="contact-form__textarea"
+                                            cols="30" rows="2"></textarea>
                                     </div>
                                     <div class="col-12">
                                         <div class="btn-wrapper desktop-center margin-top-30">
@@ -124,15 +103,16 @@
                 </div>
             </div>
         </div>
-    </div><!--message-popup-->
+    </div>
+    <!--message-popup-->
     <!-- navbar navbar-expand-md navbar-dark fixed-top bg-dark -->
     <!-- navbar start nav-style-02-->
     <div class="billa-navbar">
         <nav class="navbar navbar-expand-md bg-light fixed-top navbar-area nav-style-01" id="navbar">
             <div class="container nav-container">
                 <div class="responsive-mobile-menu">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#billatrail_main_menu" 
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#billatrail_main_menu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         <span class="bar1"></span>
                         <span class="bar2"></span>
@@ -140,7 +120,8 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="{% url 'homepage' %}"> <img src="{% static 'assets/img/logo-01.png' %}" alt="logo" style="height:48px;"></a>
+                    <a href="{% url 'homepage' %}"> <img src="{% static 'assets/img/logo-01.png' %}" alt="logo"
+                            style="height:48px;"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="billatrail_main_menu">
                     <ul class="navbar-nav">
@@ -165,96 +146,96 @@
                         <li><a href=" {% url 'about' %} ">About</a></li>
                         <li><a href=" {% url 'before-visiting' %} ">Know before you visit</a></li>
                         <li><a href="{% url 'contact' %}">Contact</a></li>
-                        <li><a href="{% url 'booking' %}" class="btn btn-element btn-lg btn-active">Book Now <i class="fa fa-envelope"></i></a></li>
+                        <li><a href="{% url 'booking' %}" class="btn btn-element btn-lg btn-active">Book Now <i
+                                    class="fa fa-envelope"></i></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    
+
     {% block content %}
-        
+
     {% endblock content %}
-        
-        
-    <div class="bottom-bg"></div>
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v8.0'
-    });
-  };
 
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        };
 
-<!-- Your Chat Plugin code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="225456004703655">
-</div>
-    <!-- footer area start -->
-    <footer class="footer-area footer-style-2">
-        <div class="footer-top padding-top-40 padding-bottom-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 col-md-2">
-                        <div class="footer-widget widget">
-                            <div class="about_us_widget">
-                                <a href="{% url 'homepage' %}" class="footer-logo"> 
-                                    <img src="{% static 'assets/img/logo-01.svg' %}" alt="footer logo">
-                                </a>
-                            </div>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="225456004703655">
+    </div>
+    
+    <!-- footer area end -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-2">
+                    <a href="{% url 'homepage' %}" class="footer-logo"> 
+                        <img src="{% static 'assets/img/logo-01.svg' %}" alt="footer logo">
+                    </a>
+                </div>
+
+                <div class="col-xs-6 col-md-4">
+                    <h6>Quick Links</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="footer-links">
+                                <li><a href="{% url 'transfer' %}">Transfer</a></li>
+                                <li><a href="{% url 'groups' %}">Groups</a></li>
+                                <li><a href=" {% url 'blog:blog' %} ">Blog</a></li>
+                                <li><a href="{% url 'booking' %}">Booking</a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-lg-7 col-md-6">
-                        <div class="row">
-                            <div class="footer-widget widget widget_nav_menu">
-                                <ul>
-                                    <li><a href="{% url 'transfer' %}">Transfer</a></li>
-                                    <li><a href="{% url 'groups' %}">Groups</a></li>
-                                    <li><a href=" {% url 'blog:blog' %} ">Blog</a></li>
-                                    <li><a href=" {% url 'about' %} ">About</a></li>
-                                    <li><a href=" {% url 'before-visiting' %} ">Know Before You Visit</a></li>
-                                    <li><a href=" {% url 'faq' %} ">FAQ</a></li>
-                                    <li><a href="{% url 'contact' %}">Contact</a></li>
-                                </ul>
-                            </div>
-                        </di
-                    </div>
-                    <div class="col-lg-3 col-md-4">
-                        <div class="footer-widget widget widget_nav_menu">
-                            <ul>
-                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <div class="col-md-6">
+                            <ul class="footer-links">
+                                <li><a href=" {% url 'about' %} ">About</a></li>
+                                <li><a href=" {% url 'before-visiting' %} ">Know Before You Visit</a></li>
+                                <li><a href=" {% url 'faq' %} ">FAQ</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <h6>Payment Methods</h6>
+                </div>
             </div>
+            <hr>
         </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-area-inner">
-                            Reeftours {% now 'Y' %} All Right Reserved. Developed With by <i class="fa fa-heart"></i> <a>Starbrand Creative</a> 
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Reeftours {% now 'Y' %} All Right Reserved. Developed With by <i class="fa fa-heart"></i> <a href=""> Starbrand Creative</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/reeftoursZ"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="https://twitter.com/ReeftoursZ"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="https://www.instagram.com/reeftours_zanzibar/"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- footer area end -->
 
     <!-- back to top area start -->
     <div class="back-to-top">
@@ -292,7 +273,7 @@
     <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
     <!-- isotope -->
     <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
-     <!-- rProgressbar -->
+    <!-- rProgressbar -->
     <script src="{% static 'assets/js/jQuery.rProgressbar.min.js' %}"></script>
     <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <!-- contact form -->
@@ -302,4 +283,5 @@
     <script src="{% static 'assets/js/overide.js' %}"></script>
     <script src="{% static 'assets/js/main.js' %}"></script>
 </body>
+
 </html>
