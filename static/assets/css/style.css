@@ -7073,6 +7073,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-size: cover;
   background-position: center center; }
 
+  .breadcrumb-jozani {
+    margin-top: 100px;
+    width: 100%;
+    height: 650px;
+    background: url(../img/breadcrumb/ex-jozani.jpg);
+    background-size: cover;
+    background-position: center center; }
+
   .breadcrumb-contact {
     margin-top: 100px;
     width: 100%;
