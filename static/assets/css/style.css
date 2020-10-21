@@ -1320,7 +1320,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
           color: var(--main-color); }
 
 .breadcrumb-style-6 {
-  background: url(../img/breadcrumb/1.png);
+  background: url(../img/breadcrumb/ex-contact.jpg);
   min-height: 421px;
   background-size: cover;
   position: relative; }
@@ -7072,6 +7072,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background: url(../img/breadcrumb/groups.png);
   background-size: cover;
   background-position: center center; }
+
+  .breadcrumb-contact {
+    margin-top: 100px;
+    width: 100%;
+    height: 650px;
+    background: url(../img/breadcrumb/ex-contact.jpg);
+    background-size: cover;
+    background-position: center center; }
 
   .breadcrumb-bg-stone {
     width: 100%;
