@@ -1,9 +1,13 @@
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from blog.models import Blog
 from . models import Booking
 from . forms import BookingForm
 from django.views.generic import TemplateView,ListView,CreateView,FormView
 from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+from django.core.mail import EmailMultiAlternatives
 
 # Create your views here.
 class Landing(ListView):
@@ -58,23 +62,40 @@ class Fishing(TemplateView):
     template_name = 'excursion/fishing.html'
 
 
-class BookingCreateView(FormView):
-    model = Booking
+class BookingCreateView(CreateView):
     form_class = BookingForm
     template_name = "pages/booking.html"
-    success_url = '/booking/'
+    success_url = reverse_lazy("booking")
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(BookingCreateView, self).get_context_data(**kwargs)
+        return context
 
     def form_valid(self, form):
-        message = "{name} / {email} said: ".format(
-            name=form.cleaned_data.get('name'),
-            email=form.cleaned_data.get('email'))
-        message += "\n\n{0}".format(form.cleaned_data.get('message'))
-        send_mail(
-            subject=form.cleaned_data.get('subject').strip(),
-            message=message,
-            from_email='contact-form@myapp.com',
-            recipient_list=[],
-        )
+        form.save()
+
+        subject = "Reeftours Booking"
+        html_message = render_to_string("pages/booking_email.html",{
+            'fname':form.cleaned_data.get('fname'),
+            'phone':form.cleaned_data.get('phone'),
+            'email':form.cleaned_data.get('email'),
+            'trips':form.cleaned_data.get('trips'),
+            'adults':form.cleaned_data.get('adults'),
+            'children':form.cleaned_data.get('child'),
+            'infants':form.cleaned_data.get('infant'),
+            'date':form.cleaned_data.get('date'),
+            'plan':form.cleaned_data.get('plan'),
+
+        })
+        message = strip_tags(html_message)
+        from_email = 'info@reeftours.co.tz'
+
+        recipient_list=['info@reeftours.co.tz']
+
+        email = EmailMultiAlternatives(subject, message, from_email, recipient_list)
+        email.attach_alternative(html_message, "text/html")
+        email.send()
+
         return super(BookingCreateView, self).form_valid(form)
 
 class Faq(TemplateView):
