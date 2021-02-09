@@ -18,14 +18,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 d-flex justify-content-center">
-                <div class="form-group">
-                    <form action="" class="form" method="post">
-                        {% csrf_token %}
-                        {{form | crispy}}
-                        <div class="btn desktop-right">
-                            <button type="submit" class="btn sm-btn">Book Now</button>
-                        </div>
-                    </form>
+                <div class="alert alert-primary" role="alert">
+                    {% if messages %}
+                    {% for message in messages %}
+                    <h3>Thanks <strong>{{ message }}</strong> for Booking.</h3>                    
+                    {% endfor %}
+                    {% endif %}
                 </div>
             </div>
         </div>

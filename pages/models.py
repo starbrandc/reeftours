@@ -21,6 +21,8 @@ class Booking(models.Model):
     infant = models.PositiveIntegerField(verbose_name="Infants")
     date = models.DateField(verbose_name="ARRIVAL DATE", auto_now=False, auto_now_add=False)   
     plan = models.TextField(verbose_name="TELL US ABOUT YOUR PLAN")
+    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         """Meta definition for Booking."""
