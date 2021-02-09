@@ -12,14 +12,14 @@ class Booking(models.Model):
         ('dhow','Dhow Sunset Cruise'),
         ('mnemba','Mnemba Island')
     ]
-    fname = models.CharField(verbose_name="First Name", max_length=100)
-    lname = models.CharField(verbose_name="Last Name", max_length=100)
+    fname = models.CharField(verbose_name="Full Name", max_length=100)
     phone = models.CharField(verbose_name="Phone Number", max_length=100, help_text="Start with country code eg:+255")
+    email = models.EmailField(verbose_name="Email Address", max_length=100)
     trips = models.CharField(verbose_name="SELECT ACTIVITY", max_length=15,choices=TRIPS)
-    adults = models.IntegerField(verbose_name="Adults")
-    child = models.IntegerField(verbose_name="Child")
-    date = models.DateField(verbose_name="ARRIVAL DATE", auto_now=False, auto_now_add=False)
-    infant = models.IntegerField(verbose_name="infants")
+    adults = models.PositiveIntegerField(verbose_name="Adults")
+    child = models.PositiveIntegerField(verbose_name="Children")
+    infant = models.PositiveIntegerField(verbose_name="Infants")
+    date = models.DateField(verbose_name="ARRIVAL DATE", auto_now=False, auto_now_add=False)   
     plan = models.TextField(verbose_name="TELL US ABOUT YOUR PLAN")
 
     class Meta:
@@ -32,12 +32,6 @@ class Booking(models.Model):
         """Unicode representation of Booking."""
         return self.fname
 
-    def save(self):
-        """Save method for Booking."""
-        pass
 
-    def get_absolute_url(self):
-        """Return absolute url for Booking."""
-        return ('')
 
     # TODO: Define custom methods here

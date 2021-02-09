@@ -152,6 +152,9 @@ CKEDITOR_CONFIGS = {
     },
 }
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
-SENDGRID_API_KEY = ["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"]
 
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_USE_TLS = True

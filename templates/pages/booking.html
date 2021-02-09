@@ -19,7 +19,8 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2 d-flex justify-content-center">
                 <div class="form-group">
-                    <form action="" class="form">
+                    <form action="" class="form" method="post">
+                        {% csrf_token %}
                         {{form | crispy}}
                     
                     <div class="btn desktop-right">
