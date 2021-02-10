@@ -5,7 +5,7 @@ from . models import Booking
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
     '''Admin View for Booking'''
-    list_display = ('fname', 'phone', 'email', 'trips', 'date')
+    list_display = ('pk','fname', 'phone', 'email', 'trips', 'date', 'created_at')
     list_filter = ('trips', 'date')
     search_fields = ('fname', 'phone', 'email')
     ordering = ('date',)
