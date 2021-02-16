@@ -90,7 +90,7 @@ class BookingCreateView(CreateView):
         message = strip_tags(html_message)
         from_email = 'info@reeftours.co.tz'
 
-        recipient_list=['info@reeftours.co.tz','baberre2011@gmail.com']
+        recipient_list=['info@reeftours.co.tz']
 
         email = EmailMultiAlternatives(subject, message, from_email, recipient_list)
         email.attach_alternative(html_message, "text/html")
