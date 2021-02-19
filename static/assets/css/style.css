@@ -19,6 +19,11 @@
   --third-font: 'Open Sans', sans-serif;
   --fourth-font: 'Midnight Signature'; }
 
+  
+.bspace {
+    margin-bottom: 20.5px;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
