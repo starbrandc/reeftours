@@ -8,6 +8,7 @@ urlpatterns = [
     path('groups',views.Groups.as_view(), name="groups"),
     path('faq',views.Faq.as_view(),name="faq"),
     path('booking',views.BookingCreateView.as_view(), name="booking"),
+    path('booking/sucess',views.BookingSuccess.as_view(), name="booking_success"),
     path('before-visiting',views.Before.as_view(), name="before-visiting"),
     path('excursion/stone-town',views.StoneTown.as_view(), name="stonetown"),
     path('excursion/prison-island',views.Prison.as_view(), name="prison"),

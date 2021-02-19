@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, reverse
 from django.urls import reverse_lazy
 from blog.models import Blog
 from . models import Booking
@@ -8,6 +8,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 from django.core.mail import EmailMultiAlternatives
+from django.contrib import messages
 
 # Create your views here.
 class Landing(ListView):
@@ -61,11 +62,18 @@ class Quadbike(TemplateView):
 class Fishing(TemplateView):
     template_name = 'excursion/fishing.html'
 
+class BookingSuccess(TemplateView):
+    template_name = 'pages/booking_success.html'
 
 class BookingCreateView(CreateView):
     form_class = BookingForm
     template_name = "pages/booking.html"
-    success_url = reverse_lazy("booking")
+    '''
+    # Normal Success url
+    # success_url = reverse_lazy("booking_success")
+    '''
+
+    fname = '' # full name variable declaration
 
     def get_context_data(self, *args, **kwargs):
         context = super(BookingCreateView, self).get_context_data(**kwargs)
@@ -73,6 +81,8 @@ class BookingCreateView(CreateView):
 
     def form_valid(self, form):
         form.save()
+
+        self.fname = form.cleaned_data.get('fname') # Assigning fname to fname varible
 
         subject = "Reeftours Booking"
         html_message = render_to_string("pages/booking_email.html",{
@@ -97,6 +107,11 @@ class BookingCreateView(CreateView):
         email.send()
 
         return super(BookingCreateView, self).form_valid(form)
+
+    # passing message to success url
+    def get_success_url(self):
+        messages.success(self.request, f'{self.fname}') # calling fname variable
+        return reverse('booking_success')    
 
 class Faq(TemplateView):
     template_name = "pages/faq.html"
