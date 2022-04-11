@@ -2866,8 +2866,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .explore-area 
   
   .explore_left img {
-    min-height: 151px; 
-  padding-left: 120px;}
+    min-height: 451px; 
+  padding-left: 10px;}
   @media only screen and (max-width: 1400px) {
     .explore-area .explore_right {
       padding-top: 70px; } }
